@@ -57,6 +57,7 @@ nav {
     align-items: center;
     gap: 3rem;
     margin-left: -5%;
+    z-index: 999;
 }
 
 nav a {
@@ -81,6 +82,7 @@ nav a:hover {
     font-weight: 500;
     transition: background-color 0.2s ease;
     cursor: pointer;
+    z-index: 999;
 }
 
 .btn-signing:hover {
@@ -153,17 +155,19 @@ main {
     display: flex;
     gap: 1rem;
     margin-top: 3rem;
+    align-items: center;
 }
 
 .btn-get-started {
     text-decoration: none;
     border: 1px solid #2a2a2a;
-    padding: 0.7rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 50px;
     font-size: 1.2 rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     transition: background-color 0.2s ease;
+    color: white;
 }
 
 .btn-get-started:hover {
@@ -190,4 +194,63 @@ main {
     position: absolute;
     top: 0;
     right: -20%;
+}
+
+@media (max-width: 1300px) {
+    header {
+        padding: 1rem 0.5rem;
+    }
+    .content {
+        margin-top: 85%;
+    }
+    .robot-3d {
+        scale: 0.8;
+        top: -20%;
+        right: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 0.1rem;
+    }
+    nav {
+        display: none;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .btn-signing {
+        padding: 0.6rem 1.5rem;
+    }
+    .content {
+        max-width: 30rem;
+        margin-left: 10%;
+        margin-top: 30rem;
+    }
+    .robot-3d {
+        scale: 0.5;
+        top: -15%;
+        right: 0;
+    }
+    .tag-box {
+        width: 12rem;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+    .buttons a {
+        padding: 15px;
+    }
+    .btn-get-started {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    .btn-signing-main {
+        padding: 0.8rem 2rem;
+        font-size: 0.8rem;
+    }
 }
