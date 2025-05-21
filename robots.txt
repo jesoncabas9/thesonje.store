@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sonje.onrender.com/sitemap.xml
